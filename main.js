@@ -13,12 +13,12 @@ let metodo = prompt("Qué sistema de calificación usas? 1. Tradicional o letras
 if (metodo == 1) {
     let calculo = (metodo) => {
         let nota = prompt(`Ingresa tu nota`);
-        if ((nota >= 90 && nota <= 100) || (nota = "A")) return (`Tu nota de ${nota} en SBG equivale a 4, `);
-        else if ((nota >= 80 && nota <=89) || (nota = "B") ) return (`Tu nota de ${nota} en SBG equivale a 3, and you Demostrates proficiency`);
-        else if ((nota >= 70 && nota <=79) || (nota = "C") ) return (`Tu nota de ${nota} en SBG equivale a 2, and you Approaches proficiency`);
-        else if ((nota >= 60 && nota <=69) || (nota = "D") ) return (`Tu nota de ${nota} en SBG equivale a 1, and you Falls well below proficiency`);
-        else if ((nota > 0 && nota < 60) || (nota = "E") ) return (`Tu nota de ${nota} en SBG equivale a 0, and you Lacks all proficiency`);
-        else if ((nota == 0) || (nota = "z") ) return (`Tu nota de ${nota} en SBG equivale a 0, you don't made an attempt`);
+        if ((nota >= 90 && nota <= 100) || (nota == "A" || nota == "a")) return (`Tu nota de ${nota} en SBG equivale a 4, `);
+        else if ((nota >= 80 && nota <=89) || (nota == "B" || nota == "b") ) return (`Tu nota de ${nota} en SBG equivale a 3, and you Demostrates proficiency`);
+        else if ((nota >= 70 && nota <=79) || (nota == "C" || nota == "c") ) return (`Tu nota de ${nota} en SBG equivale a 2, and you Approaches proficiency`);
+        else if ((nota >= 60 && nota <=69) || (nota == "D" || nota == "d") ) return (`Tu nota de ${nota} en SBG equivale a 1, and you Falls well below proficiency`);
+        else if ((nota > 0 && nota < 60) || (nota == "E" || nota == "e") ) return (`Tu nota de ${nota} en SBG equivale a 0, and you Lacks all proficiency`);
+        else if ((nota == 0) || (nota == "z" || nota == "Z") ) return (`Tu nota de ${nota} en SBG equivale a 0, you don't made an attempt`);
         else(`ingrese un valor válido`)
     }
     console.log(calculo(`1`))
